@@ -1,0 +1,15 @@
+tasks:
+  - name: Install Apache SuperSet
+    init: |
+      git clone https://github.com/apache/superset.git
+      cd superset
+      docker-compose -f docker-compose-non-dev.yml pull
+      docker-compose -f docker-compose-non-dev.yml up      
+      
+ports:
+  # Apache SuperSet
+  - port: 8088
+    
+vscode:
+  extensions:
+    - Oracle.oracledevtools
