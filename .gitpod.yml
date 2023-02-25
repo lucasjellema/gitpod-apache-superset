@@ -5,7 +5,8 @@ tasks:
       cd superset
       docker-compose -f docker-compose-non-dev.yml pull
       docker-compose -f docker-compose-non-dev.yml up      
-      
+  - name: Open README 
+    command: gp open README.md      
 ports:
   # Apache SuperSet
   - port: 8088
