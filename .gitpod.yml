@@ -9,7 +9,3 @@ tasks:
 ports:
   # Apache SuperSet
   - port: 8088
-    
-vscode:
-  extensions:
-    - Oracle.oracledevtools
